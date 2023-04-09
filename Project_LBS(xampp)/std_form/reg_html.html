@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg_css.css">
+    <title>Register Form</title>
+</head>
+<body>
+    <div class="container">
+        <a href="http://localhost/project_LBS(xampp)/login_web/code.html" style="text-align:start;">Back</a>
+        <div class="title">
+            <h3>PSG Tech Student Registration Form</h3><hr>
+        </div>
+        <div class="form">
+            <form action="reg_php.php" method="post">
+                <!-- Name -->
+                <div class="loginform">
+                    <label class="i" for="fname">First_name</label>
+                    <input class="i" type="text" id="fname" name="fname" required>
+                </div>
+                <div class="loginform">
+                    <label class="i" for="lname">Last_name</label>
+                    <input class="i" type="text" id="lname" name="lname" required>
+                </div>
+                <!-- Roll No -->
+                <div class="loginform">
+                    <label class="i" for="rollno">Roll No</label>
+                    <input class="i" type="text" id="rollno" name="rollno" required>
+                </div>
+                <!-- Email -->
+                <div class="loginform">
+                    <label class="i" for="email">Email</label>
+                    <input class="i" type="email" id="email" name="email" required>
+                </div>
+                <!-- Age -->
+                <div class="loginform">
+                    <label class="i" for="age">Date of Birth</label>
+                    <input class="i" type="date" id="age" name="age" required>
+                </div>
+                <!-- Degree -->
+                <div class="loginform">
+                    <label class="i" for="degree">Degree</label>
+                    <select class="i" name="degree" id="degree" required>
+                        <option >B.E</option>
+                        <option >B.Tech</option>
+                    </select>
+                </div>
+                <!-- Department -->
+                <div class="loginform">
+                    <label class="i" for="dept">Department</label>
+                    <select class="i" name="dept" id="dept" required>
+                        <option value="EEE(SW)">EEE(SW)</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH(SW)">MECH(SW)</option>
+                        <option value="PRODUCTION(SW)">PRODUCTION(SW)</option>
+                    </select>
+                </div>
+                <!-- Password -->
+                <div class="loginform">
+                    <label class="i" for="pswd">Create Password</label>
+                    <input class="i" type="password" id="pswd" name="pswd" required>
+                </div>
+                <!-- submit -->
+                <div><button class="button" type="submit" name="submit">Save</button></div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

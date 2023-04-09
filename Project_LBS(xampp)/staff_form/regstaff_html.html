@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regstaff_css.css">
+    <title>Register Form</title>
+</head>
+<body>
+    <div class="container">
+        <a href="http://localhost/project_LBS(xampp)/login_web/code.html" style="text-align:left;">Back</a>
+        <div class="title">
+            <h3>PSG Tech Staff Registration Form</h3><hr>
+        </div>
+        <div class="form">
+            <form action="staff.php" method="post" name="myForm">
+                <!-- Name -->
+                <div class="loginform">
+                    <label class="i" for="fname">First_name</label>
+                    <input class="inp" type="text" id="fname" name="fname">
+                </div>
+                <div class="loginform">
+                    <label class="i" for="lname">Last_name</label>
+                    <input class="inp" type="text" id="lname" name="lname">
+                </div>
+                <!-- Staff ID  -->
+                <div class="loginform">
+                    <label class="i" for="staffid">Staff ID</label>
+                    <input class="inp" type="text" id="staffid" name="staffid">
+                </div>
+                <!-- Email  -->
+                <div class="loginform">
+                    <label class="i" for="email">Email</label>
+                    <input class="inp" type="email" id="email" name="email">
+                </div>
+                <!-- Age -->
+                <div class="loginform">
+                    <label class="i" for="age">Date of Birth</label>
+                    <input class="i" type="date" id="age" name="age">
+                </div>
+                <!-- Degree -->
+                <div class="loginform">
+                    <label class="i" for="degree">Degree</label>
+                    <select class="i" name="degree" id="degree">
+                        <option >B.E</option>
+                        <option >B.Tech</option>
+                    </select>
+                </div>
+                <!-- Department -->
+                <div class="loginform">
+                    <label class="i" for="dept">Department</label>
+                    <select class="i" name="dept" id="dept">
+                        <option value="EEE(SW)">EEE(SW)</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH(SW)">MECH(SW)</option>
+                        <option value="PRODUCTION(SW)">PRODUCTION(SW)</option>
+                    </select>
+                </div>
+                <!-- Password -->
+                <div class="loginform">
+                    <label class="i" for="pswd">Create Password</label>
+                    <input class="inp" type="password" id="pswd" name="pswd">
+                </div>
+                <!-- submit -->
+                <div><button class="button" type="submit" name="submit" onclick="ifEmpty()">Save</button></div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+        function ifEmpty(){
+            let a= document.getElementById("fname").value;
+            let b= document.getElementById("lname").value;
+            let c= document.getElementById("staffid").value;
+            let d= document.getElementById("email").value;
+            let e= document.getElementById("pswd").value;
+            if (a == null || a=="" || b==null || b=="" || c == null || c=="" || d==null || d=="" || e==null ||e=="" ){
+                alert("Please fill required details");
+                window.location.href="http://localhost/project_LBS(xampp)/staff_form/regstaff_html.html"
+            }
+            else{
+                alert("Successfully Registered");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

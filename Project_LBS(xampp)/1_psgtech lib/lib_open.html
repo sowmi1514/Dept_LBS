@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSG Tech Department Library</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" style="background-color: white;">
+    <link rel="stylesheet" href="lib_open.css">
+</head>
+<body>
+    <div class="model">
+        <nav>
+            <a href="https://www.psgtech.edu/"><div class="home">Home</div></a>
+            <div class="contact"><a href="https://www.psgtech.edu/cont.php">Contact</a></div>
+            <div class="login"><a href="http://localhost/project_LBS(xampp)/login_web/code.html">Login</a></div>
+        </nav>
+        <div class="container">
+            <div class="definition">
+                <h2>PSG Tech Department Library</h2>
+                <p>About the Library system -  
+                    It can be easily accessed by the users. 
+                    The library system is focused for 
+                    providing user comfortable and friendly environmet 
+                    so as to enable learning and knowledge creation<br>
+                </p>
+            </div>
+            <div class="sltdept">
+                <!-- <form> -->
+                    <select class="items" name="dept" id="dept" onchange="selectopt()">
+                        <option value="Select Department">Select Department !...</option>
+                        <option value="EEE(SW)">EEE(SW)</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH(SW)">MECH(SW)</option>
+                        <option value="PRODUCTION(SW)">PRODUCTION(SW)</option>
+                    </select>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectopt(){
+            let s=document.getElementById('dept').value
+            switch(document.getElementById('dept').value){
+                case "EEE(SW)":
+                    window.location="http://localhost/project_LBS(xampp)/book_form/book_table.php";
+                    break;
+                case "EEE":
+                    window.location="http://localhost/project_LBS(xampp)/book_form/book_table.php";
+                    break;
+                case "ECE":
+                    window.location="";
+                    break;
+                case "PRODUCTION(SW)":
+                    window.location="";
+                    break;
+                case "MECH(SW)":
+                    window.location="https://www.yahoo.com/";
+                    break;
+                default:
+                    window.alert="invalid";
+                    break;
+                }
+        }
+    </script>
+</body>
+</html>

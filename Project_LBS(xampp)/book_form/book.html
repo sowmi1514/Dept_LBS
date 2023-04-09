@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book.css">
+    <title>Register Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>Book Details </h3><hr>
+        </div>
+        <div class="form">
+            <form action="book.php" method="post">
+                <!-- ID Code -->
+                <div class="loginform">
+                    <label class="i" for="idcode">ID Code</label>
+                    <input class="in" type="text" id="idcode" name="idcode">
+                </div>
+                <!-- Author  -->
+                <div class="loginform">
+                    <label class="i" for="author">Author</label>
+                    <input class="in" type="text" id="author" name="author">
+                </div>
+                <!-- Book Title  -->
+                <div class="loginform">
+                    <label class="i" for="booktitle">Book Title</label>
+                    <input class="in" type="text" id="booktitle" name="booktitle">
+                </div>
+                <!-- Publisher -->
+                <div class="loginform">
+                    <label class="i" for="publisher">Publisher</label>
+                    <input class="in" type="text" id="publisher" name="publisher">
+                </div>
+                <!-- Edition -->
+                <div class="loginform">
+                    <label class="i" for="edition">Edition</label>
+                    <input class="in" type="number" id="edition" name="edition">
+                </div>
+                <!-- year -->
+                <div class="loginform">
+                    <label class="i" for="year">Year</label>
+                    <input class="in" type="month" id="year" name="year">
+                </div>
+                <!-- Rack No -->
+                <div class="loginform">
+                    <label class="i" for="rackno">Rack No</label>
+                    <input class="in" type="number" id="rackno" name="rackno" min="1">
+                </div>
+                <!-- status -->
+                <div class="loginform">
+                    <label class="i" for="status">Status</label>
+                    <input class="in" type="text" id="status" name="status">
+                </div>
+                <!-- submit -->
+                <div><button class="button" type="submit" name="submit">Save</button></div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

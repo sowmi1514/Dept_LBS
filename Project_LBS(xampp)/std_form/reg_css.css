@@ -1,0 +1,88 @@
+body{
+    background-image: url("psg image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 80px;
+    /* margin-bottom: 200px; */
+    position: relative;
+    
+} 
+.container{
+    /* margin: 20% 5% 20% 5%; */
+    margin:auto;
+    padding: 22px;
+    width: max-content;
+    height: auto;
+    background-color: rgb(247, 247, 246);
+    opacity: 0.9;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgb(0,0,0,10);
+}
+h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    color:rgb(93, 15, 15)
+}
+select{
+    margin-top: 8px;
+    padding: 5px;
+}
+select:hover{
+    background-color: rgb(85, 78, 78);
+    color:whitesmoke
+}
+.form{
+    width: 300px;
+    height: auto;
+    /* padding: 5%; */
+    padding-top: 2px;
+}
+.loginform{
+    display:flex;
+    margin: 1%;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: medium;
+}
+input{
+    margin-top: 2%;
+    border-bottom: 4px;
+    align-content: center;
+    border: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid black;
+    color: black;
+}
+input:hover{
+    background-color: rgb(85, 78, 78);
+    border: 3px solid transparent;
+    color:whitesmoke
+}
+label{
+    font-size: medium;
+    font-weight: 600 ;
+}
+button{
+    font-weight: bolder;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    background-color: gray;
+    color: aliceblue;
+    margin-left: 90px;
+}
+button:hover{
+    color: black;
+    background-color: rgb(77, 29, 248);
+}

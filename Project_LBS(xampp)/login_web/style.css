@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("psg image.jpg");
+    /* background-blend-mode: darken; */
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* opacity: 1; */
+    /* background-image: url("psg image.jpg"); */
+    /* background-color: antiquewhite; */
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0,0,0,50);
+    padding: 4%;
+    font-weight: bolder;
+}
+
+div.form{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    margin: 1px;
+}
+div.form .title{
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.login{
+    padding: 1%;
+}
+.input-field{
+    padding: 2%;
+    margin-bottom: 2px;
+}
+.input-field input{
+    padding: 2%;
+    border: 2px solid transparent;
+    border-bottom: 2px solid black;
+}
+.i{
+    align-items: center;
+    padding:2%;
+    margin: 2px;
+}
+
+span .register{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* width: 20px; */
+}
+div.input-field{
+    align-items: center;
+    justify-content: space-around;
+    display :flex;
+    width: auto;
+    padding: 2%;
+    /* position: relative; */
+    margin:2px
+}
+.login{
+    width: 350px;
+    /* position:relative; */
+}
+
+input.loginbutton{
+    background-color: red;
+    color: azure;
+    margin:35px
+}
+input#button.i :hover{
+    background-color: rgb(250, 246, 246);
+}
+.border{
+    border-style: solid;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 2%;
+}
+button:hover{
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.alink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    padding: 5px;
+    border:none;
+    border-bottom: solid;
+    font-size: smaller;
+}
+#adminbtn{
+    border-radius: 50%;
+    font-weight: bold;
+    /* border: none; */
+    padding: 20px;
+    cursor:pointer;
+    margin: auto;
+    display: grid;
+    border:1px solid ;
+    background-color: rgb(81, 18, 69);
+    color: whitesmoke;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* box-shadow: 0 5px 10px rgb(0,0,0,50); */
+}
+#adminbtn:hover{
+    background-color: black;
+    color: white;
+}
